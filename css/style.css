@@ -1,3 +1,6 @@
+/* colors */
+/* font sizes */
+/* fonts */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -340,5 +343,9 @@ template {
 /* components */
 /* sections */
 /* pages / views */
+h1 {
+  color: #ff0000;
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=style.css.map */
