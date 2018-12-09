@@ -11,3 +11,8 @@
 
 /* pages / views */
 //@import 'pages/registration';
+
+h1 {
+	color: $brand-main-color;
+	font-size: $paragraph-font-size;
+}
