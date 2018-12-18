@@ -16,3 +16,13 @@ h1 {
 	color: $brand-main-color;
 	font-size: $paragraph-font-size;
 };
+
+button {
+	width: 200px;
+	background-color: $active-button-color;
+};
+
+button:hover {
+	width: 180px;
+	background-color: $active-button-color-on-hover;
+};
