@@ -1,16 +1,11 @@
 /* colors */
 $white1: #FFFFFF;
 $white2: #F5F5F2;
-$white3: #F3F3F1;
 $black1: #000000;
 $black2: #333333;
-$grey1: #5B5B5A;
-$grey2: #979797;
-$grey3: #A6A6A6;
-$grey4: #BABABA;
-$grey5: #B1B1B1;
-$grey6: #E3E3E3;
-$grey7: #F2F2F2;
+$grey1: #979797;
+$grey2: #BABABA;
+$grey3: #E3E3E3;
 $orange1: #F58220;
 $orange2: #FFA200;
 $green1: #04AE00;
@@ -26,23 +21,17 @@ $yellow1: #FFFF00;
 
 $button-text-color: $white1;
 $active-button-color: $orange1;
-$active-button-color-on-hover: $orange2;
-$inactive-button-color: $grey2;
-$inactive-button-color-on-hover: $grey4;
-$disabled-button-color: $grey6;
-$page-header-color: $grey3;
-$section-header-color: $grey3;
-$main-text-color: $black2;
-$line-header: $grey3;
+$active-button-color-hover: $orange2;
+$inactive-button-color: $grey1;
+$inactive-button-color-hover: $grey3;
+$menu-background-color: $black1;
+$menu-text-color: $grey1;
+$menu-background-color-hover: $black2;
+$menu-text-color-hover: $white1;
 
-
-
-
-$brand-main-color: #ff0000;
 
 /* font sizes */
-$paragraph-font-size: 16px;
+
 
 /* fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+
