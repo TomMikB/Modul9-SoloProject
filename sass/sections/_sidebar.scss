@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	font-family: $menu-font;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	text-decoration: none;
+	color: $menu-text-color;
+	background-color: $menu-background-color;
+	border-left: 4px solid $menu-background-color;
+	&:hover {
+		color: $menu-text-color-hover;
+		background-color: $menu-background-color-hover;
+		border-left: 4px solid $orange2;
+		.menu-icon {
+			color: $menu-text-color-hover;
+		}
+	}
+}
+
+.sidebar {
+	background-color: $menu-background-color;
+	width: 200px;
+	height: 100vh;
+	position: fixed;
+}
+
+.menu-icon {
+	font-family: $icon-font;
+	margin: 0 12px;
+	color: $menu-text-color;
+}
+
+.menu-header {
+	margin: 10px 0;
+	padding-left: 15px;
+	width: 150px;
+	color: $menu-text-color-hover;
+	font-family: $menu-header-font;
+	font-size: 30px;
+}
