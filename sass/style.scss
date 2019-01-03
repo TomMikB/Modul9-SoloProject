@@ -5,15 +5,20 @@
 
 /* components */
 @import 'components/paragraph';
+@import 'components/dots';
 
 /* sections */
 @import 'sections/sidebar';
 
 /* pages / views */
-//@import 'pages/registration';
+@import 'pages/general';
+@import 'pages/details';
+@import 'pages/links';
+@import 'pages/banners';
+@import 'pages/personaldata';
+@import 'pages/payout';
+@import 'pages/postback';
 
 * {
 	box-sizing: border-box;
 }
-
-

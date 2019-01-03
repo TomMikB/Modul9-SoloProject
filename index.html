@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<div class="container">
+		<div>
 			<input type="checkbox" id="toggle" />
 			<nav class="sidebar">
 				<div class="menu-head">
@@ -17,21 +17,35 @@
 					<label class="hamburger" for="toggle">&#9776;</label>
 				</div>
 				<ul class="menu-list">
-					<li><a class="menu-list-item" href="#"><p class="menu-icon">K</p>&nbsp;General</a></li>
-					<li><a class="menu-list-item" href="#"><p class="menu-icon">J</p>&nbsp;Details</a></li>
-					<li><a class="menu-list-item" href="#"><p class="menu-icon">L</p>&nbsp;Links</a></li>
-					<li><a class="menu-list-item" href="#"><p class="menu-icon">G</p>&nbsp;Banners</a></li>
-					<li><a class="menu-list-item" href="#"><p class="menu-icon">S</p>&nbsp;Personal Data</a></li>
-					<li><a class="menu-list-item" href="#"><p class="menu-icon">R</p>&nbsp;Payout</a></li>
-					<li><a class="menu-list-item" href="#"><p class="menu-icon">U</p>&nbsp;Postback</a></li>
+					<li><a class="menu-list-item link-change-view" id="linkGeneral" onclick="changeView('linkGeneral', 'viewGeneral')" href="#"><p class="menu-icon">K</p>&nbsp;General</a></li>
+					<li><a class="menu-list-item" id="linkDetails" onclick="changeView('linkDetails', 'viewDetails')" href="#"><p class="menu-icon">J</p>&nbsp;Details</a></li>
+					<li><a class="menu-list-item" id="linkLinks" onclick="changeView('linkLinks', 'viewLinks')" href="#"><p class="menu-icon">L</p>&nbsp;Links</a></li>
+					<li><a class="menu-list-item" id="linkBanners" onclick="changeView('linkBanners', 'viewBanners')" href="#"><p class="menu-icon">G</p>&nbsp;Banners</a></li>
+					<li><a class="menu-list-item" id="linkPersonalData" onclick="changeView('linkPersonalData', 'viewPersonalData')" href="#"><p class="menu-icon">S</p>&nbsp;Personal Data</a></li>
+					<li><a class="menu-list-item" id="linkPayout" onclick="changeView('linkPayout', 'viewPayout')" href="#"><p class="menu-icon">R</p>&nbsp;Payout</a></li>
+					<li><a class="menu-list-item" id="linkPostback" onclick="changeView('linkPostback', 'viewPostback')" href="#"><p class="menu-icon">U</p>&nbsp;Postback</a></li>
 				</ul>
 				<hr class="menu-end">
-				<h1>your manager</h1>
+				<h4 class="manager-header">your manager</h4>
 				<div class="manager">
-					<img src="//placehold.it/100x100" alt="foto" class="manager-foto">
-					<p class="paragraph-links">Mikhael E.</p>
+					<img src="//placehold.it/40x40" alt="foto" class="manager-foto">
+					<div class="dot-green"></div>
+					<a>Mikhael E.</a>
 				</div>
 			</nav>
+		</div>
+		<div>
+			<nav class="topbar">
+			</nav>
+		</div>
+		<div class="container" id="container">
+			<div class="view-general view-page page-active" id="viewGeneral">general</div>
+			<div class="view-details view-page page-inactive" id="viewDetails">details</div>
+			<div class="view-links view-page page-inactive" id="viewLinks">links</div>
+			<div class="view-banners view-page page-inactive" id="viewBanners">banners</div>
+			<div class="view-personal-data view-page page-inactive" id="viewPersonalData">personal data</div>
+			<div class="view-payout view-page page-inactive" id="viewPayout">payout</div>
+			<div class="view-postback view-page page-inactive" id="viewPostback">postback</div>
 		</div>
 		<script src="js/script.js"></script>
 	</body>

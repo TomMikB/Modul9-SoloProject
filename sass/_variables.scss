@@ -33,6 +33,9 @@ $hamburger-color: $grey1;
 $header-text-color: $grey1;
 $paragraph-color: $grey1;
 $link-color: $blue1;
+$dot-green: $green1;
+$dot-orange: $orange1;
+$dot-blue: $blue1;
 
 
 /* font sizes */
@@ -40,8 +43,14 @@ $menu-font-size: 16px;
 $menu-header-font-size: 30px;
 $hamburger-font-size: 25px;
 $icon-font-size: 16px;
-$header-font-size: 14px;
+$h1-font-size: 20px;
+$h2-font-size: 18px;
+$h3-font-size: 16px;
+$h4-font-size: 14px;
+$h5-font-size: 12px;
+$h6-font-size: 10px;
 $paragraph-font-size: 12px;
+$links-font-size: 12px;
 
 
 /* fonts */
@@ -56,3 +65,4 @@ $menu-header-font: $reklamescript;
 $icon-font: $glypher;
 $header-font: $arial;
 $paragraph-font: $tahoma;
+$links-font: $tahoma;
