@@ -1,10 +1,10 @@
 'use strict';
 
 var changeView = function (idLink, idView) {
-	var menuLink = document.getElementById(idLink);
-	var loadedPage = document.getElementById(idView);
-	var inactiveMenuLink = document.querySelectorAll('.menu-list-item');
-	var inactivePageView = document.querySelectorAll('.view-page');
+	var activeMenuLink = document.getElementById(idLink);
+	var activePageView = document.getElementById(idView);
+	var inactiveMenuLink = document.querySelectorAll('.link-change-view');
+	var inactivePageView = document.querySelectorAll('.page-active');
 
 	function removeLink() {
 		for (var i = 0; i < inactiveMenuLink.length; i++) {
@@ -21,7 +21,7 @@ var changeView = function (idLink, idView) {
 	}
 	removePage();
 
-	menuLink.classList.add('link-change-view');
-	loadedPage.classList.remove('page-inactive');
-	loadedPage.classList.add('page-active');
+	activeMenuLink.classList.add('link-change-view');
+	activePageView.classList.remove('page-inactive');
+	activePageView.classList.add('page-active');
 }

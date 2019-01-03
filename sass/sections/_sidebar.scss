@@ -7,6 +7,7 @@
 	width: 200px;
 	height: 100vh;
 	position: fixed;
+	top: 0;
 }
 
 .menu-head {
@@ -68,7 +69,7 @@
 
 .menu-icon {
 	font-family: $icon-font;
-	font-size: $icon-font-size;
+	font-size: $menu-icon-font-size;
 	margin: 0 12px;
 	color: $menu-text-color;
 }

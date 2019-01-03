@@ -13,14 +13,14 @@
 @media(max-width: 767px) {
 	@include grid('sm');
 	.container {
-		margin-left: 63px;
+		margin: 0 0 0 63px;
 	}
 }
 
 @media(min-width: 768px) {
 	@include grid('md');
 	.container {
-		margin-left: 200px;
+		margin: 60px 0 0 200px;
 	}
 }
 
