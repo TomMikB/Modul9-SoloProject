@@ -115,22 +115,38 @@ template { display: none; }
 * { box-sizing: border-box; }
 
 /* components */
+h1 { font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; color: #979797; font-size: 14px; }
+
 /* sections */
 * { box-sizing: border-box; }
 
-ul { list-style-type: none; margin: 0; padding: 0; }
-
-li a { font-family: Verdana, Geneva, sans-serif; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; height: 40px; text-decoration: none; color: #979797; background-color: #000000; border-left: 4px solid #000000; }
-
-li a:hover { color: #FFFFFF; background-color: #333333; border-left: 4px solid #FFA200; }
-
-li a:hover .menu-icon { color: #FFFFFF; }
-
 .sidebar { background-color: #000000; width: 200px; height: 100vh; position: fixed; }
 
-.menu-icon { font-family: "Glyphter", sans-serif; margin: 0 12px; color: #979797; }
+.menu-head { display: -ms-flexbox; display: flex; height: 50px; margin: 10px 0; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
 
-.menu-header { margin: 10px 0; padding-left: 15px; width: 150px; color: #FFFFFF; font-family: "Reklame Script DEMO", sans-serif; font-size: 30px; }
+.menu-header { display: block; margin: 0 0 0 20px; color: #FFFFFF; font-family: "Reklame Script DEMO", sans-serif; font-size: 30px; }
+
+.hamburger { color: #979797; margin-right: 20px; font-size: 25px; }
+
+.menu-list { display: block; list-style-type: none; margin: 0; padding: 0; }
+
+.menu-list-item { font-family: Verdana, Geneva, sans-serif; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; height: 40px; text-decoration: none; color: #979797; background-color: #000000; border-left: 4px solid #000000; }
+
+.menu-list-item:hover { color: #FFFFFF; background-color: #333333; border-left: 4px solid #FFA200; }
+
+.menu-list-item:hover .menu-icon { color: #FFFFFF; }
+
+.menu-icon { font-family: "Glyphter", sans-serif; font-size: 16px; margin: 0 12px; color: #979797; }
+
+.menu-end { margin: 20px 0; border: none; height: 1px; background: #333333; }
+
+#toggle { display: none; }
+
+@media (max-width: 767px) { .sidebar { width: auto; }
+  .hamburger { cursor: pointer; margin-left: 20px; }
+  .menu-header, .menu-list { display: none; }
+  #toggle:checked ~ .sidebar { width: 200px; }
+  #toggle:checked ~ .sidebar .menu-header, #toggle:checked ~ .sidebar .menu-list { display: block; } }
 
 /* pages / views */
 * { box-sizing: border-box; }
