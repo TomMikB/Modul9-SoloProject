@@ -50,51 +50,104 @@
 					<div class="manager-online dot-green"></div>
 					<a>Mikhael E.</a>
 				</div>
-
-			<nav class="topbar-on-phone">
-				<div class="topbar-part">
-					<p class="topbar-icon topbar-item">b</p>
-					<h2 class="topbar-item">$1,500.00</h2>
-					<p class="topbar-icon">A</p>
-				</div>
-				<div class="topbar-message">
-					<p class="topbar-icon topbar-part">P</p>
-					<div class="new-message dot-orange-small"></div>
-				</div>
-				<p class="topbar-icon topbar-part">W</p>
-				<div class="topbar-part">
-					<p class="topbar-icon topbar-item">V</p>
-					<a>Leonardo Dicaprio</a>
-				</div>				
-			</nav>
-
+	<!-- topbar moved to sidebar on phones -->
+				<nav class="topbar-on-phone">
+					<div class="topbar-part">
+						<p class="topbar-icon topbar-item">b</p>
+						<h2 class="topbar-item">$1,500.00</h2>
+						<p class="topbar-icon">A</p>
+					</div>
+					<div class="topbar-message">
+						<p class="topbar-icon topbar-part">P</p>
+						<div class="new-message dot-orange-small"></div>
+					</div>
+					<p class="topbar-icon topbar-part">W</p>
+					<div class="topbar-part">
+						<p class="topbar-icon topbar-item">V</p>
+						<a>Leonardo Dicaprio</a>
+					</div>				
+				</nav>
 			</nav>
 		</div>
 <!-- content pages -->
 		<div class="container">
+	<!-- page general -->
 			<div class="view-general view-page page-active" id="viewGeneral">
-				general
+				<div class="general-statistic">
+					<div class="row">
+						<h3>general statistic</h3>
+					</div>
+					<div class="row general-calendar-row">
+						<div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+						</div>
+						<div class="col-sm-10 col-md-8 col-lg-4 col-xl-4">
+							<div class="general-calendar">
+								<div class="general-calendar-line">
+									<p class="general-calendar-text calendar-start">16.05.2016.</p>
+									<p class="general-calendar-text calendar-end">16.05.2016.</p>
+									<p class="general-calendar-text topbar-icon">H</p>								
+								</div>
+								<button class="calendar-button"><p class="topbar-icon general-calendar-button-text">X</p></button>
+							</div>
+						</div>
+						<div class="col-sm-1 col-md-2 col-lg-4 col-xl-4">
+						</div>
+					</div>
+					<div class="row general-chart-row">
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
+						<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+							<canvas id="generalChart"></canvas>
+						</div>
+						<div class="col-sm-0 col-md-1 col-lg-2 col-xl-3">
+						</div>
+					</div>
+				</div>
+				<div class="general-links">
+					<h3>links</h3>
+					<div class="row">
+						<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<p>saklfja</p>
+						</div>
+						<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+							<p>ksuhv iasuh disadujs</p>
+						</div>
+						<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+
+						</div>
+						<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+							<p>8q9 q pwdj</p>
+						</div>
+					</div>
+				</div>
 			</div>
+	<!-- page details -->
 			<div class="view-details view-page page-inactive" id="viewDetails">
 				details
 			</div>
-			<div class="view-links view-page page-inactive" id="viewLinks">
+	<!-- page links -->
+			<div class="view-links view-general view-page page-inactive" id="viewLinks">
 				links
 			</div>
+	<!-- page banners -->
 			<div class="view-banners view-page page-inactive" id="viewBanners">
 				banners
 			</div>
+	<!-- page personal data -->
 			<div class="view-personal-data view-page page-inactive" id="viewPersonalData">
 				personal data
 			</div>
+	<!-- page payout -->
 			<div class="view-payout view-page page-inactive" id="viewPayout">
 				payout
 			</div>
+	<!-- page postback -->
 			<div class="view-postback view-page page-inactive" id="viewPostback">
 				postback
 			</div>
 		</div>
-<!-- javascript -->
+<!-- scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

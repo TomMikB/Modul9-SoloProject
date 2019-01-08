@@ -8,6 +8,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	background-color: $topbar-background-color;
+	z-index: 1;
 }
 
 .topbar-icon {
