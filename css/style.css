@@ -193,9 +193,23 @@ h5 { font-size: 12px; }
 
 h6 { font-size: 10px; }
 
-p { font-family: Tahoma, Geneva, sans-serif; color: #979797; font-size: 12px; }
+p { margin: 0; font-family: Tahoma, Geneva, sans-serif; color: #979797; font-size: 16px; }
 
-a { font-family: Tahoma, Geneva, sans-serif; color: #56819F; font-size: 12px; text-decoration: none; }
+.p-bold { font-weight: bold; }
+
+a { margin: 0; font-family: Tahoma, Geneva, sans-serif; color: #56819F; font-size: 16px; text-decoration: none; }
+
+button { border: none; outline: none; color: #FFFFFF; font-size: 14px; border-radius: 5px; }
+
+.button-active { background-color: #F58220; }
+
+.button-active:hover { background-color: #FFA200; }
+
+.button-inactive { background-color: #979797; }
+
+.button-inactive:hover { background-color: #E3E3E3; }
+
+.button-icon { font-family: "Glyphter", sans-serif; font-size: 14px; margin: 0; }
 
 .dot, .dot-green, .dot-orange, .dot-blue { width: 10px; height: 10px; border-radius: 50%; }
 
@@ -239,6 +253,8 @@ a { font-family: Tahoma, Geneva, sans-serif; color: #56819F; font-size: 12px; te
 .topbar-on-phone .topbar-part { border: none; height: 40px; }
 
 .topbar-on-phone .new-message { top: 9px; }
+
+.topbar-username { font-size: 12px; }
 
 @media (max-width: 767px) { .topbar { display: none; } }
 
@@ -293,13 +309,23 @@ a { font-family: Tahoma, Geneva, sans-serif; color: #56819F; font-size: 12px; te
 
 .view-general .general-calendar { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
 
-.view-general .general-calendar-text { margin: 0; width: auto; }
+.view-general .general-calendar-text { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; margin: 0; width: auto; color: #000000; font-size: 14px; height: 30px; }
 
-.view-general .general-calendar-line { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+.view-general .general-calendar-line { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; padding: 5px 15px; border: 1px solid #E3E3E3; border-radius: 5px; width: 320px; }
 
-.view-general .general-calendar-row { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; height: 90px; border-bottom: 1px solid #E3E3E3; }
+.view-general .general-calendar-end { padding-left: 15px; border-left: 1px solid #E3E3E3; }
 
-.view-general .general-chart-row { height: 111px; }
+.view-general .general-calendar-row { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; height: 100px; border-bottom: 1px solid #E3E3E3; }
+
+.view-general .calendar-icon { font-family: "Glyphter", sans-serif; font-size: 12px; color: #000000; }
+
+.view-general .general-stats-row { margin: 20px 0 60px 0; }
+
+.view-general .general-stats { display: -ms-flexbox; display: flex; width: 100%; border-bottom: 1px solid #E3E3E3; -ms-flex-pack: justify; justify-content: space-between; margin-top: 30px; padding-bottom: 10px; }
+
+.view-general .general-stat-number { color: #000000; }
+
+.view-general .calendar-button { height: 40px; width: 40px; margin-left: 20px; }
 
 @media (max-width: 767px) { .col-sm-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
   .col-sm-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
@@ -313,7 +339,9 @@ a { font-family: Tahoma, Geneva, sans-serif; color: #56819F; font-size: 12px; te
   .col-sm-10 { -ms-flex: 0 0 83.33333%; flex: 0 0 83.33333%; max-width: 83.33333%; }
   .col-sm-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
   .col-sm-12 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
-  .general-statistic { border-bottom: 5px solid #E3E3E3; } }
+  .general-statistic { border-bottom: 5px solid #E3E3E3; }
+  .p-bold { margin-left: 20px; }
+  .general-stat-number { margin-right: 20px; } }
 
 @media (min-width: 768px) { .col-md-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
   .col-md-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
@@ -327,7 +355,9 @@ a { font-family: Tahoma, Geneva, sans-serif; color: #56819F; font-size: 12px; te
   .col-md-10 { -ms-flex: 0 0 83.33333%; flex: 0 0 83.33333%; max-width: 83.33333%; }
   .col-md-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
   .col-md-12 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
-  .general-statistic { border-bottom: 10px solid #E3E3E3; } }
+  .general-statistic { border-bottom: 10px solid #E3E3E3; }
+  .p-bold { margin-left: 0; }
+  .general-stat-number { margin-right: 0; } }
 
 @media (min-width: 992px) { .col-lg-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
   .col-lg-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }

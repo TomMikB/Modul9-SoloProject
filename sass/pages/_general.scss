@@ -16,21 +16,56 @@
 		justify-content: center;
 	}
 	.general-calendar-text {
+		display: flex;
+		align-items: center;
 		margin: 0;
 		width: auto;
+		color: $paragraph-color2;
+		font-size: 14px;
+		height: 30px;
 	}
 	.general-calendar-line {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+		padding: 5px 15px;
+		border: 1px solid $container-background-color;
+		border-radius: 5px;
+		width: 320px;
+	}
+	.general-calendar-end {
+		padding-left: 15px;
+		border-left: 1px solid $container-background-color;
 	}
 	.general-calendar-row {
 		display: flex;
 		align-items: center;
-		height: 90px;
+		height: 100px;
 		border-bottom: 1px solid $container-background-color;
 	}
-	.general-chart-row {
-		height: 111px;
+	.calendar-icon {
+		font-family: $icon-font;
+		font-size: $calendar-icon-size;
+		color: $calendar-icon-color;
+	}
+	.general-stats-row {
+		margin: 20px 0 60px 0;
+	}
+	.general-stats {
+		display: flex;
+		width: 100%;
+		border-bottom: 1px solid $container-background-color;
+		justify-content: space-between;
+		margin-top: 30px;
+		padding-bottom: 10px;
+	}
+	.general-stat-number {
+		color: $paragraph-color2;
+	}
+	.calendar-button {
+		height: 40px;
+		width: 40px;
+		margin-left: 20px;
 	}
 }
 
@@ -39,12 +74,24 @@
 	.general-statistic {
 		border-bottom: 5px solid $container-background-color;
 	}
+	.p-bold {
+		margin-left: 20px;
+	}
+	.general-stat-number {
+		margin-right: 20px;
+	}
 }
 
 @media(min-width: 768px) {
 	@include grid('md');
 	.general-statistic {
 		border-bottom: 10px solid $container-background-color;
+	}
+	.p-bold {
+		margin-left: 0;
+	}
+	.general-stat-number {
+		margin-right: 0;
 	}
 }
 

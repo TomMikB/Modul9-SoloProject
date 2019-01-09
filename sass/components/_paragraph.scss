@@ -29,12 +29,18 @@ h6 {
 }
 
 p {
+	margin: 0;
 	font-family: $paragraph-font;
 	color: $paragraph-color;
 	font-size: $paragraph-font-size;
 }
 
+.p-bold {
+	font-weight: bold;
+}
+
 a {
+	margin: 0;
 	font-family: $links-font;
 	color: $link-color;
 	font-size: $links-font-size;

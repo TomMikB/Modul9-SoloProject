@@ -32,6 +32,7 @@ var changeView = function (idLink, idView) {
 }
 
 /* chart */
+Chart.defaults.global.legend.labels.usePointStyle = true;
 var chartOne = document.getElementById('generalChart').getContext('2d');
 var chart = new Chart(chartOne, {
     type: 'bar',
@@ -39,22 +40,40 @@ var chart = new Chart(chartOne, {
         labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
         datasets: [{
             label: "Signups",
-            backgroundColor: '#8DBEC8',
-            borderColor: '#8DBEC8',
-            data: [ 52, 51, 41, 94, 26, 6, 72, 9, 21, 88 ],
+            backgroundColor: '#56819F',
+            borderColor: '#56819F',
+            data: [ 352, 191, 241, 254, 426, 356, 272, 259, 281, 100 ],
         },
         {
             label: "FTD",
-            backgroundColor: '#F29E4E',
-            borderColor: '#F29E4E',
-            data: [ 6, 72, 1, 0, 47, 11, 50, 44, 63, 76 ],
+            backgroundColor: '#F58220',
+            borderColor: '#F58220',
+            data: [ 406, 172, 301, 220, 447, 111, 250, 504, 293, 300 ],
         },
         {
             label: "Earned",
-            backgroundColor: '#71B374',
-            borderColor: '#71B374',
-            data: [ 59, 49, 68, 90, 67, 41, 13, 38, 48, 48 ],
+            backgroundColor: '#04AE00',
+            borderColor: '#04AE00',
+            data: [ 359, 149, 268, 290, 467, 241, 213, 338, 248, 200 ],
             hidden: true,
         }]
     },
+	options: {
+		legend: {
+			labels: {
+				fontSize: 20,
+				padding: 25,
+			}
+		},
+		scales: {
+			yAxes: [{
+				gridLines: {
+					display: false,
+				},
+				ticks: {
+					beginAtZero: true,
+				}
+			}]
+		}
+	}
 });
