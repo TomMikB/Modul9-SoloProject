@@ -29,6 +29,12 @@ var changeView = function (idLink, idView) {
 	activeMenuLink.classList.add('link-change-view');
 	activePageView.classList.remove('page-inactive');
 	activePageView.classList.add('page-active');
+
+	if (idView == 'viewGeneral') {
+		var showLinks = document.getElementById('viewLinks');
+		showLinks.classList.remove('page-inactive');
+		showLinks.classList.add('page-active');
+	}
 }
 
 /* chart */
@@ -61,8 +67,8 @@ var chart = new Chart(chartOne, {
 	options: {
 		legend: {
 			labels: {
-				fontSize: 20,
-				padding: 25,
+				fontSize: 15,
+				padding: 15,
 			}
 		},
 		scales: {

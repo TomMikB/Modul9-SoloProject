@@ -46,3 +46,18 @@ a {
 	font-size: $links-font-size;
 	text-decoration: none;
 }
+
+.links-icon {
+	font-family: $icon-font;
+	font-size: $links-icon-size;
+}
+
+.links-icon1 {
+	@extend .links-icon;
+	color: $links-icon-color1;
+}
+
+.links-icon2 {
+	@extend .links-icon;
+	color: $links-icon-color2;
+}

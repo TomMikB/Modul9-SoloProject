@@ -1,15 +1,4 @@
 .view-general {
-	.general-statistic, .general-links {
-		display: block;
-		align-items: center;
-		h3 {
-			line-height: 50px;
-			min-width: 100%;
-			margin: 0;
-			padding-left: 20px;
-			border-bottom: 1px solid $container-background-color;
-		}
-	}
 	.general-calendar {
 		display: flex;
 		align-items: center;
@@ -67,13 +56,13 @@
 		width: 40px;
 		margin-left: 20px;
 	}
+	canvas {
+		max-height: 500px;
+	}
 }
 
 @media(max-width: 767px) {
 	@include grid('sm');
-	.general-statistic {
-		border-bottom: 5px solid $container-background-color;
-	}
 	.p-bold {
 		margin-left: 20px;
 	}
@@ -84,9 +73,6 @@
 
 @media(min-width: 768px) {
 	@include grid('md');
-	.general-statistic {
-		border-bottom: 10px solid $container-background-color;
-	}
 	.p-bold {
 		margin-left: 0;
 	}
@@ -97,9 +83,6 @@
 
 @media(min-width: 992px) {
 	@include grid('lg');
-	.general-statistic {
-		border-bottom: 20px solid $container-background-color;
-	}
 }
 
 @media(min-width: 1200px) {

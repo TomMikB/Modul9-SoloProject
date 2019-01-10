@@ -1,3 +1,6 @@
 .view-links {
-	height: 500px;
+	.links-row {
+		display: flex;
+		justify-content: center;
+	}
 }
