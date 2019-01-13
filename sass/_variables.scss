@@ -71,10 +71,15 @@ $links-icon-size: 14px;
 
 
 /* fonts */
+@font-face {
+	font-family: glyphterFont;
+	src: url(/fonts/Glyphter.woff)  format('woff');
+}
+
 $arial: Arial, Helvetica, sans-serif;
 $tahoma: Tahoma, Geneva, sans-serif;
 $verdana: Verdana, Geneva, sans-serif;
-$glypher: "Glyphter", sans-serif;
+$glypher: glyphterFont, sans-serif;
 $reklamescript: "Reklame Script DEMO", sans-serif;
 
 $menu-font: $verdana;
