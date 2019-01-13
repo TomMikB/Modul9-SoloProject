@@ -1,7 +1,7 @@
 /* colors */
 /* font sizes */
 /* fonts */
-@font-face { font-family: glyphterFont; src: url(/fonts/Glyphter.woff) format("woff"); }
+@font-face { font-family: glyphterFont; src: url("/fonts/Glyphter.woff") format("woff"); }
 
 /* grid */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
