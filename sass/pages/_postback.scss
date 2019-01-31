@@ -1,4 +1,49 @@
-* {
-	box-sizing: border-box;
+.view-postback {
+	.postback-header {
+		color: $paragraph-color2;
+		font-size: $paragraph-font-size2;
+		padding: 25px 0 10px 20px;
+	}
+	.postback-row {
+		width: 100%;
+		padding: 20px 20px;
+		//margin: 20px 0;
+	}
+	.p-red {
+		color: $paragraph-alt-color;
+		display: inline;
+	}
+	input:not([type="checkbox"]), select, textarea {
+		display: block;
+		width: 100%;
+	}
+	textarea {
+		resize: none;
+		height: 100px;
+	}
+	.row-with-button {
+		text-align: right;
+		button {
+			margin: 20px 20px 20px 0;
+		}
+	}
+	.checkbox-list {
+		height: 200px;
+	}
+	.postback-row-send {
+		border-top: 1px solid $container-background-color;
+		border-bottom: 1px solid $container-background-color;
+	}
 }
 
+@media(max-width: 767px) {
+}
+
+@media(min-width: 768px) {
+}
+
+@media(min-width: 992px) {
+}
+
+@media(min-width: 1200px) {
+}

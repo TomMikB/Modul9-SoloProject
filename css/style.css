@@ -125,6 +125,12 @@ template { display: none; }
 
 .view-page { background-color: #FAFAFA; }
 
+::-webkit-scrollbar { width: 20px; }
+
+::-webkit-scrollbar-track { background-color: #E3E3E3; }
+
+::-webkit-scrollbar-thumb { background-color: #979797; }
+
 @media (max-width: 767px) { .col-sm-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
   .col-sm-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
   .col-sm-3 { -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; }
@@ -225,7 +231,7 @@ button { border: none; outline: none; color: #FFFFFF; font-size: 14px; font-fami
 
 .add-button { width: 120px; height: 35px; font-size: 18px; margin: 20px 0; }
 
-.save-button { width: 100px; height: 35px; font-size: 18px; margin: 20px 0; }
+.save-button { width: 10 0px; height: 35px; font-size: 18px; margin: 20px 0; }
 
 .add-button-bottom { margin: 20px 15px 20px -15px; }
 
@@ -376,6 +382,30 @@ th, td { padding: 0; border-bottom: 1px solid #BABABA; text-align: left; }
 
 .calendar-button { height: 40px; width: 40px; margin-left: 20px; }
 
+label { display: inline-block; height: 40px; font-family: Tahoma, Geneva, sans-serif; color: #979797; font-size: 16px; font-weight: bold; }
+
+input, select { display: inline-block; height: 40px; border: 1px solid #E3E3E3; border-radius: 4px; background-color: #FAFAFA; color: #000000; font-size: 16px; padding-left: 15px; }
+
+input:focus, select:focus { outline: none; border-color: #979797; }
+
+input:invalid, select:invalid { background-color: #DE5252; }
+
+input[type="checkbox"] { visibility: hidden; }
+
+.newCheckbox { width: 25px; display: -ms-flexbox; display: flex; position: relative; }
+
+.newCheckbox label { cursor: pointer; position: absolute; width: 25px; height: 25px; top: 0; left: 0; background-color: #FFFFFF; border: 1px solid #E3E3E3; }
+
+.newCheckbox p { line-height: 25px; margin-left: 30px; color: #000000; font-size: 14px; }
+
+.newCheckbox label:after { opacity: 0; content: ''; position: absolute; width: 9px; height: 5px; background-color: transparent; top: 6px; left: 7px; border: 3px solid #FFFFFF; border-top: none; border-right: none; transform: rotate(-45deg); }
+
+.newCheckbox input[type=checkbox]:checked + label { background-color: #04AE00; }
+
+.newCheckbox input[type=checkbox]:checked + label:after { opacity: 1; }
+
+.checkbox-list { overflow-y: auto; }
+
 /* pages / views */
 .view-general .general-stats-row { margin: 20px 0 60px 0; }
 
@@ -433,13 +463,9 @@ th, td { padding: 0; border-bottom: 1px solid #BABABA; text-align: left; }
 
 .view-personal-data .field { padding: 0 50px 10px 0px; }
 
-.view-personal-data label { display: inline-block; width: 30%; height: 40px; font-family: Tahoma, Geneva, sans-serif; color: #979797; font-size: 16px; font-weight: bold; }
+.view-personal-data label { width: 30%; }
 
-.view-personal-data input, .view-personal-data select { display: inline-block; width: 69%; height: 40px; border: 1px solid #E3E3E3; border-radius: 4px; background-color: #FAFAFA; color: #000000; font-size: 16px; padding-left: 15px; }
-
-.view-personal-data input:focus, .view-personal-data select:focus { outline: none; border-color: #979797; }
-
-.view-personal-data input:invalid, .view-personal-data select:invalid { background-color: #DE5252; }
+.view-personal-data input, .view-personal-data select { width: 69%; }
 
 @media (max-width: 767px) { .view-personal-data label, .view-personal-data input, .view-personal-data select { display: block; width: 100%; }
   .view-personal-data label { height: 20px; }
@@ -463,6 +489,22 @@ th, td { padding: 0; border-bottom: 1px solid #BABABA; text-align: left; }
 
 .view-payout .scroll-wrapper table { min-width: 650px; width: 100%; max-width: 100%; }
 
-* { box-sizing: border-box; }
+.view-postback .postback-header { color: #000000; font-size: 14px; padding: 25px 0 10px 20px; }
+
+.view-postback .postback-row { width: 100%; padding: 20px 20px; }
+
+.view-postback .p-red { color: #FF0000; display: inline; }
+
+.view-postback input:not([type="checkbox"]), .view-postback select, .view-postback textarea { display: block; width: 100%; }
+
+.view-postback textarea { resize: none; height: 100px; }
+
+.view-postback .row-with-button { text-align: right; }
+
+.view-postback .row-with-button button { margin: 20px 20px 20px 0; }
+
+.view-postback .checkbox-list { height: 200px; }
+
+.view-postback .postback-row-send { border-top: 1px solid #E3E3E3; border-bottom: 1px solid #E3E3E3; }
 
 * { box-sizing: border-box; }
