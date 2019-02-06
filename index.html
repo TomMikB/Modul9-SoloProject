@@ -19,14 +19,14 @@
 				<div class="new-message dot-orange-small"></div>
 			</div>
 			<div class="topbar-part">
-				<p class="topbar-icon topbar-item">V</p>
+				<p class="topbar-icon topbar-item" onclick="openModal('#popupLogin')">V</p>
 				<a class="topbar-username">Leonardo Dicaprio</a>
 			</div>
-			<p class="topbar-icon topbar-part">W</p>
+			<p class="topbar-icon topbar-part" onclick="openModal('#popupQuit')">W</p>
 		</nav>
 <!-- sidebar menu -->		
 		<div>
-			<input type="checkbox" id="toggle" />
+			<input type="checkbox" id="toggle">
 			<nav class="sidebar">
 				<div class="menu-head">
 					<p class="menu-header">Just do it</p>
@@ -44,9 +44,9 @@
 				<hr class="menu-end">
 				<h4 class="manager-header">your manager</h4>
 				<div class="manager">
-					<img src="//placehold.it/40x40" alt="foto" class="manager-foto">
+					<img src="//placehold.it/40x40" alt="foto" class="manager-foto" onclick="openModal('#popupMessage')">
 					<div class="manager-online dot-green"></div>
-					<a>Mikhael E.</a>
+					<a onclick="openModal('#popupMessage')">Mikhael E.</a>
 				</div>
 	<!-- topbar moved to sidebar on phones -->
 				<nav class="topbar-on-phone">
@@ -59,9 +59,9 @@
 						<p class="topbar-icon topbar-part">P</p>
 						<div class="new-message dot-orange-small"></div>
 					</div>
-					<p class="topbar-icon topbar-part">W</p>
+					<p class="topbar-icon topbar-part" onclick="openModal('#popupQuit')">W</p>
 					<div class="topbar-part">
-						<p class="topbar-icon topbar-item">V</p>
+						<p class="topbar-icon topbar-item" onclick="openModal('#popupLogin')">V</p>
 						<a class="topbar-username">Leonardo Dicaprio</a>
 					</div>				
 				</nav>
@@ -345,7 +345,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
-						<button class="button-active add-button">+ add new</button>
+						<button class="button-active add-button" onclick="openModal('#popupAddLinks')">+ add new</button>
 					</div>
 				</div>
 				<div class="row links-row">
@@ -410,7 +410,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
-						<button class="button-active add-button add-button-bottom">+ add new</button>
+						<button class="button-active add-button add-button-bottom" onclick="openModal('#popupAddLinks')">+ add new</button>
 					</div>
 				</div>
 			</div>
@@ -423,7 +423,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
-						<button class="button-active add-button">+ add new</button>
+						<button class="button-active add-button" onclick="openModal('#popupAddBanners')">+ add new</button>
 					</div>
 				</div>
 				<div class="row banners-row">
@@ -468,7 +468,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 button-row">
-						<button class="button-active add-button add-button-bottom">+ add new</button>
+						<button class="button-active add-button add-button-bottom" onclick="openModal('#popupAddBanners')">+ add new</button>
 					</div>
 				</div>
 			</div>
@@ -787,6 +787,44 @@
 				</div>
 			</div>
 		</div>
+<!-- popups -->
+<div class="overlay" id="overlay">
+	<!-- popup add banners -->
+	<div class="modal popup-add-banners" id="popupAddBanners">
+		<div class="btn-close js--close-modal">x</div>
+		<h4>Witaj w modalu add banners!</h4>
+		<p>Lorem ipsum dolor sit amet...</p>
+		<button class="js--close-modal">Okay</button>
+	</div>
+	<!-- popup add links -->
+	<div class="modal popup-add-links" id="popupAddLinks">
+		<div class="btn-close js--close-modal">x</div>
+		<h4>Witaj w modalu add links!</h4>
+		<p>Lorem ipsum dolor sit amet...</p>
+		<button class="js--close-modal">Okay</button>
+	</div>
+	<!-- popup login -->
+	<div class="modal popup-login" id="popupLogin">
+		<div class="btn-close js--close-modal">x</div>
+		<h4>Witaj w modalu login!</h4>
+		<p>Lorem ipsum dolor sit amet...</p>
+		<button class="js--close-modal">Okay</button>
+	</div>
+	<!-- popup message -->
+	<div class="modal popup-message" id="popupMessage">
+		<div class="btn-close js--close-modal">x</div>
+		<h4>Witaj w modalu message!</h4>
+		<p>Lorem ipsum dolor sit amet...</p>
+		<button class="js--close-modal">Okay</button>
+	</div>
+	<!-- popup quit -->
+	<div class="modal popup-quit" id="popupQuit">
+		<div class="btn-close js--close-modal">x</div>
+		<h4>Witaj w modalu quit!</h4>
+		<p>Lorem ipsum dolor sit amet...</p>
+		<button class="js--close-modal">Okay</button>
+	</div>
+</div>
 <!-- scripts -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 		<script src="js/script.js"></script>

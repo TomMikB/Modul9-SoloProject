@@ -125,6 +125,16 @@ template { display: none; }
 
 .view-page { background-color: #FAFAFA; }
 
+.overlay { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; overflow: auto; padding: 30px; display: none; }
+
+.overlay.show-popup { display: -ms-flexbox; display: flex; }
+
+.modal { max-width: 600px; margin: auto; background-color: #fff; position: relative; padding: 30px; display: none; }
+
+.modal .btn-close { position: absolute; top: 0; right: 0; padding: 5px 10px; }
+
+.modal.show-popup { display: block; }
+
 ::-webkit-scrollbar { width: 20px; }
 
 ::-webkit-scrollbar-track { background-color: #E3E3E3; }
