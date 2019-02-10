@@ -124,11 +124,11 @@ function openModal(modal) {
 
 /* language flag */
 function selectLang(lang) {
-	var flagTable = ["url('../images/flags/en.png')", 
-					"url('../images/flags/pl.png')", 
-					"url('../images/flags/de.png')", 
-					"url('../images/flags/fr.png')", 
-					"url('../images/flags/es.png')"];
+	var flagTable = ["url('./images/flags/en.png')", 
+					"url('./images/flags/pl.png')", 
+					"url('./images/flags/de.png')", 
+					"url('./images/flags/fr.png')", 
+					"url('./images/flags/es.png')"];
 	var selectBox = document.getElementById(lang);
 	var selected = document.getElementById(lang).style.backgroundImage = flagTable[selectBox.selectedIndex];
 }
